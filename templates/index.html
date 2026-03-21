@@ -1,1 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RESUME CHECKER </title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <span id="upload"> Upload files to check skills match</span>
+   <form method="POST" enctype="multipart/form-data" id="form">
+    
+    <h4> Upload job description file here : </h4>
+    <input type="file" name="jd" id="file-jd"><br><br>
 
+    <h4> Upload resume file here : </h4>
+    <input type="file" name="resume" id="upload-jd"><br><br>
+    <button id="check"> Check </button>
+</form>
+
+{% if percent_skills is not none %}
+<p> Result </p>
+     <span id="name">Matching skills: <h5 id="match"> {{percent_skills}} %</h5></span>
+  {% if missing_skills is not none %}
+       <sapn id="name">Missing skills: <p id="percent"> {{missing_skills}} </p></h5>
+{% endif %}
+{% endif %}
+
+
+</body>
+</html>
