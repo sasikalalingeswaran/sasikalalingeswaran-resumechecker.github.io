@@ -1,1 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+body{
+    font-family: poppins;
+    margin-top: 60px;
+}
+#upload{
+    margin-left: 520px;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+h4{
+    margin-left: 50px;
+    font-weight: 400;
+}
+#form{
+    margin-left: 340px;
+    margin-top: 30px;
+    width: 50%;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 12px grey;
+}
+#match{
+    color: green;
+    margin-left: 20px;
+    margin-top: 2px;
+    font-weight: 500;
+}
+#name{
+    color: rgb(0, 0, 70);
+    margin-left: 400px;
+    margin-top: 10px;
+    font-weight: 500;
+    display: flex;
+}
+#percent{
+    margin-left: 25px;
+    margin-top: 2px;
+    font-weight: 500;
+    font-size: 15px;
+    color: black;
+}
+#check{
+    width: 20%;
+    height: 30px;
+    transition: all 0.5s ease;
+    margin-top: 20px;
+    margin-left: 250px;
+    background-color: orangered;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+#check:hover{
+    transform: scale(1.1);
+}
+::file-selector-button{
+    background-color: blue;
+    color: white;
+    outline: none;
+    border: 1px solid white;
+    height: 30px;
+    padding: 9px;
+    margin-left: 50px;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+p{
+    margin-left: 670px;
+    
+    font-weight: 500;
+    letter-spacing: 2px;
+}
